@@ -1,0 +1,151 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"ios": "2.2081"
+	},
+	"version": "v1.0.0",
+	"id": "lyophi.brainrotdeaths",
+	"name": "Brainrot Deaths",
+	"developer": "lyophi",
+	"description": "Brainrot New Best texts and death sound effects at specific percentages.",
+	"tags": ["fun", "enhancement"],
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enable Brainrot Texts",
+			"description": "Replace the New Best text with a brainrot text for the percent you died at.",
+			"default": true
+		},
+		"sounds-enabled": {
+			"type": "bool",
+			"name": "Enable Death Sounds",
+			"description": "Play a sound effect when you die at a percent that has one.",
+			"default": true
+		},
+		"wait-for-sound": {
+			"type": "bool",
+			"name": "Wait For Sound Before Respawn",
+			"description": "Do not respawn until the death sound effect has finished playing.",
+			"default": false
+		},
+		"use-presets": {
+			"type": "bool",
+			"name": "Use Preset Percents",
+			"description": "Use the built in brainrot texts and sounds (67, 69, 99, and more).",
+			"default": true
+		},
+		"random-for-others": {
+			"type": "bool",
+			"name": "Random Text For Other Percents",
+			"description": "If a percent has no preset or custom entry, show a random brainrot text.",
+			"default": true
+		},
+		"random-sound-for-others": {
+			"type": "bool",
+			"name": "Random Sound For Other Percents",
+			"description": "If a percent has no preset or custom entry, play a random preset sound.",
+			"default": false
+		},
+		"normal-mode-only": {
+			"type": "bool",
+			"name": "Normal Mode Only",
+			"description": "Do not trigger texts and sounds in Practice Mode.",
+			"default": true
+		},
+		"volume": {
+			"type": "int",
+			"name": "Sound Volume",
+			"description": "Volume of the death sound effect.",
+			"default": 100,
+			"min": 0,
+			"max": 100,
+			"control": {
+				"slider": true
+			}
+		},
+		"custom-percent-1": {
+			"type": "int",
+			"name": "Custom 1: Percent",
+			"description": "Percent to trigger on. 0 means off.",
+			"default": 0,
+			"min": 0,
+			"max": 100
+		},
+		"custom-text-1": {
+			"type": "string",
+			"name": "Custom 1: Text",
+			"default": ""
+		},
+		"custom-sound-1": {
+			"type": "file",
+			"name": "Custom 1: Sound",
+			"description": "Pick an audio file, or leave empty for no sound.",
+			"default": "",
+			"control": {
+				"dialog": "open",
+				"filters": [
+					{
+						"files": ["*.mp3", "*.ogg", "*.wav"],
+						"description": "Audio files"
+					}
+				]
+			}
+		},
+		"custom-percent-2": {
+			"type": "int",
+			"name": "Custom 2: Percent",
+			"description": "Percent to trigger on. 0 means off.",
+			"default": 0,
+			"min": 0,
+			"max": 100
+		},
+		"custom-text-2": {
+			"type": "string",
+			"name": "Custom 2: Text",
+			"default": ""
+		},
+		"custom-sound-2": {
+			"type": "file",
+			"name": "Custom 2: Sound",
+			"description": "Pick an audio file, or leave empty for no sound.",
+			"default": "",
+			"control": {
+				"dialog": "open",
+				"filters": [
+					{
+						"files": ["*.mp3", "*.ogg", "*.wav"],
+						"description": "Audio files"
+					}
+				]
+			}
+		},
+		"custom-percent-3": {
+			"type": "int",
+			"name": "Custom 3: Percent",
+			"description": "Percent to trigger on. 0 means off.",
+			"default": 0,
+			"min": 0,
+			"max": 100
+		},
+		"custom-text-3": {
+			"type": "string",
+			"name": "Custom 3: Text",
+			"default": ""
+		},
+		"custom-sound-3": {
+			"type": "file",
+			"name": "Custom 3: Sound",
+			"description": "Pick an audio file, or leave empty for no sound.",
+			"default": "",
+			"control": {
+				"dialog": "open",
+				"filters": [
+					{
+						"files": ["*.mp3", "*.ogg", "*.wav"],
+						"description": "Audio files"
+					}
+				]
+			}
+		}
+	}
+}
